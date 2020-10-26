@@ -79,7 +79,7 @@ This version of Node.js requires NODE_MODULE_VERSION ABC. Please try re-compilin
 [Related NODE_MODULE_VERSION Issue](https://github.com/mscdex/cap/issues/92)
 Depending on the version required, find the node ABI registry in at [here](https://github.com/nodejs/node/blob/master/doc/abi_version_registry.json):
 
-Then use [electron-rebuild](https://github.com/electron/electron-rebuild) at ./pty from the [nuclide-prebuilt-libs](https://github.com/facebook-atom/nuclide-prebuilt-libs
+Then use [electron-rebuild](https://github.com/electron/electron-rebuild) at ./pty from the [nuclide-prebuilt-libs](https://github.com/facebook-atom/nuclide-prebuilt-libs)
 
 Install the electron-rebuild
 ```
