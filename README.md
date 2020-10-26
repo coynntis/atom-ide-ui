@@ -70,6 +70,19 @@ Check out the documentation pages for more information about each feature!
 
 See [Keybindings](https://github.com/facebook-atom/atom-ide-ui/blob/master/docs/keybindings.md) for a list of default keybindings.
 
+## Fix on NODE_MODULE_VERSION issue
+As the Atom-ide-ui is no longer maintained, one will encounter an error when trying run "Terminal" function.
+Something like:
+```
+This version of Node.js requires NODE_MODULE_VERSION ABC. Please try re-compiling or re-installing...
+```
+[Related NODE_MODULE_VERSION Issue](https://github.com/mscdex/cap/issues/92)
+Depending on the version required, find the node ABI registry in at [here](https://github.com/nodejs/node/blob/master/doc/abi_version_registry.json）:
+
+Then use [electron-rebuild](https://github.com/electron/electron-rebuild) at ./pty from the [nuclide-prebuilt-libs](https://github.com/facebook-atom/nuclide-prebuilt-libs)
+
+Last updated on 26-10-2020 by Coynntis
+
 ## License
 
 `atom-ide-ui` is BSD-licensed. We also provide an additional patent grant.
